@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+    color: #333;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+
+}
+
+ul{ list-style: none;}
+li{ font-size: 1.1em;}
+
+
+.card-header, .card-footer{
+    background-color: #BDF2F2;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.img-container {
+    flex: 0 0 400px;
+    height: 500px;
+    background-image: url("img/imagen-yo.png");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    margin-right: 35px;
+}
+
+.texto {
+    flex: 1; 
+    padding: 0 10px; 
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.info-list li strong {
+    color: #000; 
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom:0;
+}
+.card-footer img {
+    width: 150px; 
+    margin: 0 auto;
+    display: block;
+    background-position: center;
+    background-color: #8dd2e2;
+}
+
+a {
+    color: #5BC2D9;
+    text-decoration: none;
+
+}
+
+a:hover {
+    background-color: #afecf9;
+}
+
+a:visited {
+    color:#4da8bd;
+}
+
+
+@media (max-width: 850px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .img-container {
+        margin-right: 0;
+        margin-bottom: 20px; 
+        margin-top: 0;
+        width: 100%; 
+        background-size: cover;
+
+    }
+
+    .texto {
+        text-align: left; 
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
